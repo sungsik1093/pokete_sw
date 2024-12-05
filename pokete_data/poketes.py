@@ -1413,7 +1413,7 @@ w        w""",
         "attacks": ["poison_bite", "bite", "webattack", "power_bite"],
         "pool": [],
         "miss_chance": 0,
-        "desc": "Dnagerous spider like Pokete with strong mandibles.",
+        "desc": "Dangerous spider like Pokete with strong mandibles.",
         "lose_xp": 4,
         "rarity": 0.5,
         "types": ["poison", "normal"],
@@ -1427,7 +1427,400 @@ w        w""",
 W         W""",
             "esc": None}]
     },
+
+
+############################## 새로운 몬스터 추가
+
+    "Pika": {
+        "name": "Pika",
+        "hp": 20,
+        "atc": 4,
+        "defense": 2,
+        "attacks": ["shock", "tackle", "spark_shower"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": " A small, energetic electric Pokete that lights up the night. ",
+        "lose_xp": 3,
+        "rarity": 1,
+        "types": ["electro", "normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 6,
+        "ico": [{
+            "txt": r"""  
+/\__/\
+(o^.^o)
+(> : <)
+(____)""",
+            "esc": None
+        }, {
+        "txt": r"""
+ *  *
+* ** *""",
+            "esc": ["yellow"]
+        }]
+    }, # type: ignore
+
+
+    "shelldrop": {
+        "name": "Shelldrop",
+        "hp": 20,
+        "atc": 3,
+        "defense": 4,
+        "attacks": ["tackle", "bubble_bomb", "shell_shield"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A small water Pokete with a protective shell on its back.",
+        "lose_xp": 2,
+        "rarity": 1,
+        "types": ["water"],
+        "evolve_poke": "shellsplash",
+        "evolve_lvl": 25,
+        "initiative": 3,
+        "ico": [{
+            "txt": r"""
+ / o o \
+( > - < )
+ \_____/""",
+            "esc": None
+    }, {
+            "txt": r"""
+   ~
+ ~ ~""",
+            "esc": ["lightblue"]
+        }]
+    },
+
+    "shellsplash": {
+        "name": "Shellsplash",
+        "hp": 25,
+        "atc": 5,
+        "defense": 6,
+        "attacks": ["tackle", "bubble_gun", "shell_shield", "water_jet"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "An evolved water Pokete with a stronger shell and powerful water attacks.",
+        "lose_xp": 4,
+        "rarity": 0.8,
+        "types": ["water"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 4,
+        "ico": [{
+            "txt": r"""
+   _______
+  / o   o \
+ ( >  ^  < )
+  \\_____//
+   ||   ||""",
+            "esc": None
+        }, {
+            "txt": r"""
+    ~ ~
+  ~  ~  ~""",
+            "esc": ["lightblue"]
+        }]
+    },
+
+    "seedling": {
+        "name": "Seedling",
+        "hp": 20,
+        "atc": 3,
+        "defense": 2,
+        "attacks": ["tackle", "leaf_storm"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A small sprout grown from a seed. It begins to emit toxicity.",
+        "lose_xp": 2,
+        "rarity": 1,
+        "types": ["plant", "poison"],
+        "evolve_poke": "toxibloom",
+        "evolve_lvl": 25,
+        "initiative": 2,
+        "ico": [{
+            "txt": r"""
+   ^
+  (*)
+   |
+  / \ """,
+            "esc": None
+        }, {
+            "txt": r"""
+   *
+  * *""",
+            "esc": ["green"]
+        }]
+    },
+
+    "toxibloom": {
+        "name": "Toxibloom",
+        "hp": 25,
+        "atc": 5,
+        "defense": 3,
+        "attacks": ["leaf_storm", "poison_spores", "root_slap", "poison_thorn"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A plant Pokete with a highly toxic flower. It releases powerful poison.",
+        "lose_xp": 4,
+        "rarity": 0.8,
+        "types": ["plant", "poison"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 3,
+        "ico": [{
+            "txt": r"""
+   @@@
+  (o o)
+   \=/
+  // \\ """,
+            "esc": None
+        }, {
+            "txt": r"""
+  * * *
+ *  *  *""",
+            "esc": ["purple"]
+        }]
+    },
+
+
+    "emberwing": {
+        "name": "Emberwing",
+        "hp": 20,
+        "atc": 4,
+        "defense": 1,
+        "attacks": ["tackle", "ember"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A small fire bird Pokete with tiny flame wings.",
+        "lose_xp": 2,
+        "rarity": 1,
+        "types": ["fire", "flying"],
+        "evolve_poke": "blazefeather",
+        "evolve_lvl": 20,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""  ^v^
+ ( o>
+  ===
+   ^""",
+            "esc": None
+        }, {
+            "txt": r"""  * *
+   *
+  *""",
+            "esc": ["red"]
+        }]
+    },
+
+    "blazefeather": {
+        "name": "Blazefeather",
+        "hp": 25,
+        "atc": 6,
+        "defense": 3,
+        "attacks": ["tackle", "ember", "wing_hit"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A fire bird Pokete with wings that emit flames.",
+        "lose_xp": 4,
+        "rarity": 0.7,
+        "types": ["fire", "flying"],
+        "evolve_poke": "phoenixflare",
+        "evolve_lvl": 35,
+        "initiative": 6,
+        "ico": [{
+            "txt": r"""   ^V^
+  <(o )>
+   ===
+   / \ """,
+            "esc": None
+        }, {
+            "txt": r"""  * * *
+ *  *  *
+   * *""",
+            "esc": ["red"]
+        }]
+    },
+
+    "phoenixflare": {
+        "name": "Phoenixflare",
+        "hp": 30,
+        "atc": 9,
+        "defense": 5,
+        "attacks": ["tackle", "fire_ball", "wing_hit", "flame_throw"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A majestic fire bird Pokete resembling a phoenix.",
+        "lose_xp": 6,
+        "rarity": 0.3,
+        "types": ["fire", "flying"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 7,
+        "ico": [{
+            "txt": r"""   /\
+  {^^}
+ =/  \=
+   ][""",
+            "esc": None
+        }, {
+            "txt": r""" * ** *
+* *  * *
+ *    *
+  *  *""",
+            "esc": ["red"]
+        }]
+    },
+
+    "shadowling": {
+        "name": "Shadowling",
+        "hp": 20,
+        "atc": 3,
+        "defense": 2,
+        "attacks": ["tackle", "shadow_ball"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A small shadow creature that lurks in dark corners.",
+        "lose_xp": 2,
+        "rarity": 1,
+        "types": ["dark", "normal"],
+        "evolve_poke": "umbrawl",
+        "evolve_lvl": 20,
+        "initiative": 4,
+        "ico": [{
+            "txt": r"""
+   ..
+  (oo)
+   \/""",
+            "esc": None
+        }, {
+            "txt": r"""
+  ~~~~""",
+            "esc": ["purple"]
+        }]
+},
+
+    "umbrawl": {
+        "name": "Umbrawl",
+        "hp": 25,
+        "atc": 5,
+        "defense": 3,
+        "attacks": ["shadow_ball", "night_slash", "dark_pulse"],
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A menacing shadow with glowing eyes and sharp claws.",
+        "lose_xp": 4,
+        "rarity": 0.7,
+        "types": ["dark", "normal"],
+        "evolve_poke": "nightterror",
+        "evolve_lvl": 35,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""
+  /\__/\
+ (◕__◕)
+  \><</ """,
+            "esc": None
+        }, {
+            "txt": r"""
+ ~~~~~~""",
+            "esc": ["purple"]
+        }]
+    }, # type: ignore
+
+    "nightterror": {
+        "name": "Nightterror",
+        "hp": 30,
+        "atc": 7,
+        "defense": 5,
+        "attacks": ["shadow_ball", "night_slash", "dark_pulse", "nightmare"], # type: ignore
+        "pool": [],
+        "miss_chance": 0.1,
+        "desc": "A terrifying creature of darkness that haunts the dreams of its enemies.",
+        "lose_xp": 6,
+        "rarity": 0.3,
+        "types": ["dark", "ghost"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 6,
+        "ico": [{
+            "txt": r"""
+   /\___/\
+  (  o o  )
+ /  \-^-/  \
+/ /| \ / |\ \ """,
+            "esc": None
+        }, {
+            "txt": r"""
+  ~ ~ ~ ~ # type: ignore
+ ~ ~ ~ ~ ~""",
+            "esc": ["purple"]
+        }]
+    },
+
+    "darkrai": {
+        "name": "Darkrai",
+        "hp": 30,
+        "atc": 8,
+        "defense": 5,
+        "attacks": ["dark_void", "nightmare", "shadow_ball", "dark_pulse"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "A mythical Pokete that can lull people to sleep and give them nightmares.",
+        "lose_xp": 8,
+        "rarity": 0.05,
+        "types": ["dark"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 7,
+        "ico": [{
+            "txt": r"""  ___
+ /o o\
+ \ - /
+  \_/
+ /| |\
+/ |_| \ """,
+            "esc": None
+        }, {
+            "txt": r"""
+   *
+  * *
+ *   *""",
+            "esc": ["purple"]
+        }]
+    },
+
+    "robotv": {
+        "name": "RobotV",
+        "hp": 25,
+        "atc": 4,
+        "defense": 3,
+        "attacks": ["tackle", "punch", "wind_blow", "shock"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "a robot which fist looks like V",
+        "lose_xp": 3,
+        "rarity": 2,
+        "types": ["flying", "electro", "normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 4,
+        "ico": [{
+            "txt": r"""  &----&
+|o o|
+-------
+v-|     |-v""",
+            "esc": None
+        }, {
+            "txt": r"""
+   *
+  * *
+ *   *""",
+            "esc": ["purple"]
+        }]
+    },
 }
+
 
 if __name__ == "__main__":
     print("\033[31;1mDo not execute this!\033[0m")
+
